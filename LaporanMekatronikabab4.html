@@ -1,0 +1,314 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BabIV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #c55757;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #282828;
+            border-radius: 4px;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: black;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;} 
+            /* Table styling */
+         table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000000;
+            text-align: left;
+        }
+        th {
+            background-color: \#809ce9;
+            color: rgb(0, 0, 0);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BabIV</h1>
+    Data dan Pembahasan 
+</header>
+
+<nav>
+    <a href="LaporanMekatronikaBeranda.html">Beranda</a>
+    <a href="LaporanMekatronikaBab1.html">Bab1</a>
+    <a href="LaporanMekatronikabab2.html">Bab2</a>
+    <a href="LaporanMekatronikabab3.html">Bab3</a>
+    <a href="LaporanMekatronikabab4.html">Bab4</a>
+    <a href="LaporanMekatronikabab5.html">Bab5</a>
+</nav>
+</body>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisa</title>
+</head>
+<body>
+
+<h2 align="center">BAB IV<br>DATA DAN PEMBAHASAN </h2>
+
+<h3>4.1 Analisa</h3> 
+<br>
+
+<h3>4.1.1	Gambar rangkaian Elektronikanya</h3>
+<img src="Foto/Water.jpg" width="300" alt="Gambar Rangkaian Water Sensor" />
+<img src="Foto/Wwaterr.jpg" width="300" alt="Gambar Rangkaian Water Sensor" />
+<img src="Foto/dark.jpg" width="300" alt="Gambar Rangkaian Dark Sensor" />
+
+<h3>4.1.2 Rangkaian</h3>
+<h1>Water Sensor:</h1>
+
+<p>Transistor BC547: Kolektor >> Resistor 220 Ohm dan Arus negatif</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basis >> Kabel jumper </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emitor >> Kaki anoda LED dan Kaki anoda Buzzer</p>
+
+<p>LED: Anoda >> Kaki emitor transistor BC547 dan Kaki anoda Buzzer</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katoda >> Arus negatif</p>
+
+<p>Buzzer: Anoda >> Kaki transistor BC547 dan kaki anoda LED</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katoda >> Arus negatif</p>
+
+<p>Resistor 220 Ohm: Salah satu kaki >> Kaki kolektor transistor BC547</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Salah satu kaki >> Arus positif</p>
+
+<h1>Dark Sensor:</h1>
+
+<p>Transistor BC547: kolektor >> Kaki katoda LED</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basis >> Resistor 10K Ohm dan kaki LDR </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emitor >> Kaki LDR dan arus negatif</p>
+
+<p>LED: Anoda >> Kaki resistor 10K Ohm dan arus positif </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katoda >> Kaki kolektor transistor BC547</p>
+
+<p>LDR: Salah satu kaki >> Kaki basis transistor BC547 </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salah satu kaki >> Kaki emitor transistor BC547</p>
+
+<p>Resistor 10K Ohm: Salah satu kaki >> Kaki basis transistor BC547</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salah satu kaki >> Kaki anoda LED dan arus positif</p>
+
+<h2>4.2 HASIL</h2>
+<h3>4.2.1 Hasil yang didapatkan (Timeline)</h3>
+
+<div class="content">
+    <table>
+        <tr>
+            <th><b>No.</b></th>
+            <th>Tanggal</th>
+            <th>Berhasil/gagal</th>
+            <th>Hasil yang didapatkan</th>
+            <th>Kesalahan</th>
+            <th>Pembetulan</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>20 November 2024</td>
+            <td>Berhasil</td>
+            <td>Menemukan ide untuk membuat rumah yang menggunakan sensor cahaya dan sensor air untuk toren.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>     
+        <tr>
+            <td>2.</td>
+            <td>27 November 2024</td>
+            <td>Berhasil</td>
+            <td>Membeli alat dan bahan untuk membuat rangkaian.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr> 
+        <tr>
+            <td>3.</td>
+            <td>8 Januari 2025</td>
+            <td>Gagal</td>
+            <td>LED di sensor air tidak menyala.</td>
+            <td style="text-align: center;">LED meledak</td>
+            <td style="text-align: center;">Mengganti LED yang baru.</td>
+        </tr> 
+        <tr>
+            <td>4.</td>
+            <td>10 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Membeli alat dan bahan untuk membuat maket.</td>
+            <td style="text-align: center;">kurang bahan</td>
+            <td style="text-align: center;">Bawa bahan yang lebih banyak</td>
+        </tr> 
+        <tr>
+            <td>5.</td>
+            <td>13 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Rangkaian berhasil.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr> 
+        <tr>
+            <td>6.</td>
+            <td>15 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Maket sudah menjadi rumah.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>20 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Memberi cat dan hiasan.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr> 
+        <tr>
+            <td>8.</td>
+            <td>22 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Rangkaian sudah di masukkan di dalam maket.</td>
+            <td style="text-align: center;">Saat memasukkan rangkaian lupa untuk di video kan.</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>24 Januari 2025</td>
+            <td>Gagal</td>
+            <td>LED pada dark sensor tidak menyala setelah rangkaian di masukkan di dalam maket.</td>
+            <td style="text-align: center;">LDR rusak.</td>
+            <td style="text-align: center;">Membeli LDR yang baru.</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>29 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>LED pada dark sensor sudah menyala.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>2 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Sensor air sudah ditempel pada toren air.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>9 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Maket sudah jadi.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>13.</td>
+            <td>12 Februari 2025</td>
+            <td>Gagal</td>
+            <td>LED pada water sensor tidak menyala.</td>
+            <td style="text-align: center;">Kaki katoda LED harusnya langsung ke arus negatif.</td>
+            <td style="text-align: center;">Menyambungkan kaki katoda LED langsung ke arus negatif.</td>
+        </tr>
+        <tr>
+            <td>14.</td>
+            <td>16 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>LED pada water sensor sudah menyala.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>15.</td>
+            <td>17 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Maket dan rangkaian sudah jadi.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>16.</td>
+            <td>24 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Presentasi pada Bu Jul, Bu Inggar, dan Pak Tikno.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td>27 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Presentasi pada Bu Fera.</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+    </table>
+</div>
+
+<h3>4.2.2 Hasil Percobaan</h3>
+<p>Water sensor: Pada percobaan pertama rangkaian saya sudah berhasil tetapi setelah dimasukkan ke maket terkadang LED pada water sensor tidak menyala dan ternyata LED rusak.</p>
+<p>Dark sensor: Pada percobaan pertam gagal karena LDR rusak, lalu pada percobaan kedua dark sensor sudah bisa bekerja.</p>
+
+<br>
+
+<h3>4.3 Kelebihan dan Kekurangan Alat</h3>
+<p>Kelebihan Water sensor: Bisa mendeteksi level air dengan baik.</p>
+<p>Kekurangan Water sensor: Kabel bisa berkarat karena teredam air.</p>
+<p>Kelebihan Dark sensor: Bisa mendeteksi jika malam hari maka lampu akan menyala dan saat pagi hari maka lampu akan mati.</p>
+<p>Kekurangan Dark sensor: LDR tidak bisa lebih sensirif jika digunakan di dalam ruangan.</p>
+
+<br>
+
+<h3>4.4 Evaluasi Diri</h3>
+<p>Saya merasa tidak bisa tepat waktu untuk menyelesaikan projek ini, tetapi kenyataannya saya bisa menyelesaikan projek ini tepat waktu. Dengan projek ini saya belajar seperti jika waktu tidak bisa diulang maka harus serius, dan saya juga belajar kesabaran dalam membuat projek ini. </p>
+
+<footer>
+    &copy; 2024 kristamitra. All rights reserved.
+</footer>
+
+</body>
